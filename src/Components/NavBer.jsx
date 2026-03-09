@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from "./Container"
 import Button from "./Button"
 import Flex from './Flex'
@@ -9,21 +9,31 @@ import { Link } from 'react-router-dom'
 import Logo from "../assets/Logo.png"
 
 const NavBer = () => {
+
+    const [navber, setNavber] = useState(false)
+
+    const handleClick = ()=>{
+        setNavber(!navber)
+    }
+
   return (
     <>
         <Container>
-            <nav className='py-4 border-b-1 border-[##ADADAD] '>
-                <Flex>
-                    <figure>
+            <nav className='py-4 lg:py-0 border-b-1 border-[##ADADAD] '>
+                <Flex className="justify-between !flex-nowrap lg:!justify-start items-center relative">
+                    <figure className=' lg:w-[60%]'>
                         <Link to={"/"}><img src={Logo} alt="Logo" /></Link>
                     </figure>
-                    <ul className='flex gap-5 items-center font-poppins font-medium text-[16px] uppercase text-textColor'>
-                        <Link to={"/"}>Home</Link>    
-                        <Link to={"alldoctors"}>All Doctors</Link>    
-                        <Link to={"about"}>About</Link>    
-                        <Link to={"contact"}>Contact</Link>    
-                    </ul> 
-                    <Link to={"signup"}> <Button className="bg-primary text-white">Create Account</Button> </Link>  
+                    <div className={`${navber?  "top-20  bg-blue-400" :"top-20 left-[-500px]"} lg:flex justify-between  w-full space-y-3.5 lg:static absolute  left-0  rounded-2xl p-5 transition-all duration-1000`}>
+                        <ul className='lg:flex  gap-5 lg:pt-4 font-poppins font-medium text-[16px] uppercase text-textColor space-y-2.5'>
+                                <li><Link to={"/"}>Home</Link></li>    
+                                <li><Link to={"alldoctors"}>All Doctors</Link></li>    
+                                <li><Link to={"about"}>About</Link></li>    
+                                <li><Link to={"contact"}>Contact</Link></li>    
+                            </ul> 
+                            <Link to={"signup"}> <Button className="bg-primary text-white">Create Account</Button> </Link> 
+                    </div>
+                    <button onClick={handleClick} className='text-4xl block lg:hidden'>=</button>
                 </Flex>
             </nav> 
         </Container>
