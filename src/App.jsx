@@ -7,6 +7,8 @@ import SignIn from "./Page/SignIn"
 import SignUp from "./Page/SignUp"
 import AllDoctors from "./Page/AllDoctors"
 import Contact from "./Page/Contact"
+import PrivitePolice from "./Page/PrivitePolice"
+import Error404 from "./Page/Error404"
 
 // *! React DOM Router
 
@@ -22,15 +24,17 @@ const AllPage = createBrowserRouter([
     {path:"contact", Component: Contact},
     {path:"signin", Component: SignIn},
     {path:"signup", Component: SignUp},
+    {path:"PrivitePolice", Component: PrivitePolice},
+    {path: "*", Component: Error404}
   ]
 }
 ])
 
 const App = () => {
   return (
-    <div>
+    <>
       <RouterProvider router={AllPage}/>
-    </div>
+    </>
   )
 }
 

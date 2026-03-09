@@ -21,7 +21,7 @@ const SpecialitySection = () => {
             DetailsLine="Simply browse through our extensive list of trusted doctors, schedule your appointment hassle-free." />
 
             <div className='pt-[64px]'>
-                <Flex className=" gap-9 !justify-center !text-center text-paraColor">
+                <Flex className=" gap-9 !justify-center mx-auto !text-center text-paraColor">
                     <div>
                         <img src={Physician} alt="Photo" />
                         <p>General Physician</p>

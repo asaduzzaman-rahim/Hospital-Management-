@@ -11,14 +11,14 @@ const SliderSection = () => {
     <>
      <Section>
         <Container>
-            <div className='bg-primary rounded-[50px]'>
-                <Flex className=" items-center px-[100px]">
-                    <div className='py-[90px]'>
-                        <h2 className="font-bold text-white font-Outfit text-[52px] leading-[90px] pb-[36px]">
+            <div className='bg-primary rounded-[10px]'>
+                <Flex className=" flex-nowrap justify-between items-end px-7 lg:px-[100px]">
+                    <div className='py-[20px] lg:py-[90px] max-w-[270px] lg:!max-w-[790px]'>
+                        <h2 className="font-bold text-white font-Outfit text-xl lg:text-[52px] lg:leading-[90px] pb-4 lg:pb-[36px]">
                             Book Appointment With 100+ Trusted Doctors</h2>
                         <Button className="bg-white text-btnColor">Create Account</Button>
                     </div>
-                    <div>
+                    <div className='lg:w-[50%] max-w-[30%]'>
                         <img src={SliderPhoto} alt="Slider Photo" />
                     </div>
                 </Flex>

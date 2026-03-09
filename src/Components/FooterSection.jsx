@@ -3,6 +3,8 @@ import Section from "./Section"
 import Container from "./Container"
 import Flex from "./Flex"
 
+import { Link } from 'react-router-dom'
+
 import FooterLogo from "../assets/Footer Logo.svg"
 
 const FooterSection = () => {
@@ -16,15 +18,15 @@ const FooterSection = () => {
                             <figure>
                                 <img src={FooterLogo} alt="" />
                             </figure>
-                            <p className='text-[18px] leading-[30px] text-paraColor '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p className='text-[18px] leading-[30px] text-paraColor '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div>
                             <h5 className="text-[22px] leading-7 font-Outfit font-semibold text-paraColor uppercase">Company</h5>
                             <ul className='pt-[40px] text-xl leading-7 font-Outfit text-paraColor space-y-3.5'>
-                                <li>Home</li>
-                                <li>About Us</li>
-                                <li>Contact Us</li>
-                                <li>Privite Police</li>
+                                <li><Link to={"/"}>Home</Link></li>
+                                <li><Link to={"about"}>About Us</Link></li>
+                                <li><Link to={"contact"}>Contact Us</Link></li>
+                                <li><Link to={"PrivitePolice"}>Privite Police</Link></li>
                             </ul>
                         </div>
                         <div>
