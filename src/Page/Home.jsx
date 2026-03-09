@@ -9,12 +9,10 @@ import FooterSection from "../Components/FooterSection"
 const Home = () => {
   return (
     <>
-      <NavBer/>
       <Benar/>
       <SpecialitySection/>
       <TopDoctorBook/>
       <SliderSection/>
-      <FooterSection/>
     </>
   )
 }
