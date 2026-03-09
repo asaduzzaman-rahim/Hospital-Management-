@@ -9,7 +9,7 @@ const NavBer = () => {
   return (
     <>
         <Container>
-            <nav className='py-4 border-b-1 border-[##ADADAD]'>
+            <nav className='py-4 border-b-1 border-[##ADADAD] '>
                 <Flex>
                     <figure>
                         <img src={Logo} alt="Logo" />
