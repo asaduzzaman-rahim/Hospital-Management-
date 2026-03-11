@@ -1,10 +1,13 @@
 import React from 'react'
+import AboutSection from '../Components/AboutSection'
+import WhyChoose from '../Components/WhyChoose'
 
 const About = () => {
   return (
-    <div>
-            <h2 className='text-6xl text-center pt-10 '>About Page </h2>
-    </div>
+    <>
+        <AboutSection/>  
+        <WhyChoose/>  
+    </>
   )
 }
 
