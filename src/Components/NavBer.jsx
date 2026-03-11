@@ -22,7 +22,7 @@ const NavBer = () => {
     <>
         <Container>
             <nav className='py-4 lg:py-0 border-b-1 border-[##ADADAD] '>
-                <Flex className="justify-between !flex-nowrap lg:!justify-start items-center relative">
+                <Flex className="!justify-between !flex-nowrap lg:!justify-start items-center relative">
                     <figure className=' lg:w-[60%]'>
                         <Link to={"/"}><img src={Logo} alt="Logo" /></Link>
                     </figure>
