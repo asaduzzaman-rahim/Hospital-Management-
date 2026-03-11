@@ -3,6 +3,7 @@ import Section from "./Section"
 import Container from "./Container"
 import Flex from "./Flex"
 import DoctorCategory from './DoctorCategory'
+import DoctorList from "./DoctorList"
 
 const DoctorPage = () => {
   return (
@@ -12,12 +13,12 @@ const DoctorPage = () => {
             <div className='pb-9'>
                 <span className='text-xl font-Outfit text-paraColor leading-7'>Browse through the doctors specialist.</span>
             </div> 
-            <Flex>
+            <Flex className="gap-9">
                 <div>
                     <DoctorCategory/>
                 </div> 
                 <div>
-                    
+                    <DoctorList/>
                 </div>   
             </Flex>   
         </Container>    
