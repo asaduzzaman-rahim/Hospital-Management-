@@ -12,7 +12,7 @@ const Appointment = () => {
      <Section>
         <Container>
             <div>
-                <Flex className="gap-6.5 lg:justify-start">
+                <Flex className="gap-6.5 lg:justify-start lg:items-center">
                     <div className="bg-primary h-[273px] w-[273px] flex justify-center items-end rounded-xl">
                          <img  src={DoctorPhoto01} alt="Doctor Photo" />
                     </div>

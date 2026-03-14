@@ -6,6 +6,8 @@ import DoctorsCart from './DoctorsCart'
 import Flex from "./Flex"
 import Button from './Button' 
 
+import { useNavigate } from 'react-router-dom'
+
 import DoctorPhoto01 from "../assets/Doctor Photo (1).png"
 import DoctorPhoto02 from "../assets/Doctor Photo (2).png"
 import DoctorPhoto03 from "../assets/Doctor Photo (3).png"
@@ -13,6 +15,10 @@ import DoctorPhoto04 from "../assets/Doctor Photo (4).png"
 import DoctorPhoto05 from "../assets/Doctor Photo (5).png"
 
 const TopDoctorBook = () => {
+    
+
+    const Navigate = useNavigate()
+
   return (
     <>
      <Section>
@@ -84,7 +90,7 @@ const TopDoctorBook = () => {
                     />
                     
                 </Flex>  
-                <button className='px-[84px] py-[18px] text-xl font-Outfit rounded-[50px] bg-[#EAEFFF] text-paraColor cursor-pointer '>more</button>                  
+                <button onClick={()=> Navigate("/alldoctors")} className='px-[84px] py-[18px] text-xl font-Outfit rounded-[50px] bg-[#EAEFFF] text-paraColor cursor-pointer '>more</button>                  
             </div>
 
         </Container>    

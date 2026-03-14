@@ -28,4 +28,7 @@ p{
     font-size: 18px;
     font-family: "Outfit", sans-serif;
 }
+button{
+    cursor: pointer;
+}
 

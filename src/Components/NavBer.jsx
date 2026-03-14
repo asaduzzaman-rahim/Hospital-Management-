@@ -33,7 +33,7 @@ const NavBer = () => {
                                 <li><Link to={"about"}>About</Link></li>    
                                 <li><Link to={"contact"}>Contact</Link></li>    
                             </ul> 
-                            <Link to={"signup"}> <Button className="bg-primary text-white">Create Account</Button> </Link> 
+                            <Link to={"signup"}> <Button className="bg-primary  text-white">Create Account</Button> </Link> 
                     </div>
                     <button onClick={handleClick} className='text-4xl block lg:hidden cursor-pointer'>{ !navber ? <LuMenu/> : <RxCross1 />}</button>
                 </Flex>
