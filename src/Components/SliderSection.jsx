@@ -4,9 +4,12 @@ import Container from "./Container"
 import Flex from "./Flex"
 import Button from "./Button"
 
+import { useNavigate } from 'react-router-dom'
+
 import SliderPhoto from "../assets/SliderImage.png"
 
 const SliderSection = () => {
+    const Navigate = useNavigate()
   return (
     <>
      <Section>
@@ -16,7 +19,7 @@ const SliderSection = () => {
                     <div className='py-[20px] lg:py-[90px] max-w-[270px] lg:!max-w-[790px]'>
                         <h2 className="font-bold text-white font-Outfit text-xl lg:text-[52px] lg:leading-[90px] pb-4 lg:pb-[36px]">
                             Book Appointment With 100+ Trusted Doctors</h2>
-                        <Button className="bg-white text-btnColor">Create Account</Button>
+                        <Button onClick={()=>Navigate("/signup")} className="bg-white text-btnColor">Create Account</Button>
                     </div>
                     <div className='lg:w-[50%] max-w-[30%]'>
                         <img src={SliderPhoto} alt="Slider Photo" />

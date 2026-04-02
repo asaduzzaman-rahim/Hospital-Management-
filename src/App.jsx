@@ -15,7 +15,7 @@ import Error404 from "./Page/Error404"
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const AllPage = createBrowserRouter([
+const root = createBrowserRouter([
   {path: "/", 
   Component: LayOut,
   children:[
@@ -35,7 +35,7 @@ const AllPage = createBrowserRouter([
 const App = () => {
   return (
     <>
-      <RouterProvider router={AllPage}/>
+      <RouterProvider router={root}/>
     </>
   )
 }
