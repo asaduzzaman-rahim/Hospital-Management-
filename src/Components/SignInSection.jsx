@@ -6,6 +6,13 @@ import { useNavigate } from 'react-router'
 
 const SignInSection = () => {
         const NavigatePage = useNavigate()
+
+        const handleSignIn = (e)=>{
+            e.preventDefault()
+            alert("Oh Sorry..............  This Function is Working Now!")
+        }
+
+        
     
   return (
     <>
@@ -26,7 +33,7 @@ const SignInSection = () => {
                              <label className='text-[16px] font-Outfit text-paraColor' htmlFor="password">Password</label>
                              <input className='w-full px-2 py-2 mt-[8px] border-1 rounded-[4px] border-[#DADADA] ' type="password" />
                          </div>
-                         <Button className="bg-primary text-white w-full font-bold  !rounded-[6px] mt-4">Login</Button>
+                         <Button onClick={handleSignIn} className="bg-primary text-white w-full font-bold  !rounded-[6px] mt-4">Login</Button>
                      </form>
                      <p className='text-[16px] font-Outfit text-paraColor'>Create an account? <button className='underline' 
                      onClick={()=>NavigatePage("/signup")}>Login here</button></p>

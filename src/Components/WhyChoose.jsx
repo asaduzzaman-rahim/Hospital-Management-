@@ -5,7 +5,7 @@ import Flex from "./Flex"
 const WhyChoose = () => {
   return (
     <>
-    <div className='h-screen'>
+    <div className='md:h-screen'>
      <Container>
         <div  className='pt-20 pb-[30px]'>
             <h5 className='text-2xl font-Outfit uppercase'>Why <span className='font-semibold '>Choose us</span></h5>

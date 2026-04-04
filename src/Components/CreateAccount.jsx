@@ -6,6 +6,16 @@ import { useNavigate } from 'react-router'
 
 const CreateAccount = () => {
     const NavigatePage = useNavigate()
+
+    const handleSignUp =(e)=>{
+       e.preventDefault() 
+       alert("Oh Sorry..............  This Function is Working Now!")
+    }
+
+    
+
+
+
   return (
     <>
      <Section>
@@ -28,7 +38,7 @@ const CreateAccount = () => {
                         <label className='text-[16px] font-Outfit text-paraColor' htmlFor="password">Password</label>
                         <input className='w-full px-2 py-2 mt-[8px] border-1 rounded-[4px] border-[#DADADA] ' type="password" />
                     </div>
-                    <Button className="bg-primary text-white w-full font-bold  !rounded-[6px] mt-4">Create Account</Button>
+                    <Button onClick={handleSignUp} className="bg-primary text-white w-full font-bold  !rounded-[6px] mt-4">Create Account</Button>
                 </form>
                 <p className='text-[16px] font-Outfit text-paraColor'>Already have an account? <button className='underline' 
                 onClick={()=>NavigatePage("/signin")}>Login here</button></p>

@@ -31,4 +31,10 @@ p{
 button{
     cursor: pointer;
 }
+input{
+    outline-style: none;
+}
+ul li{
+    cursor: pointer;
+}
 

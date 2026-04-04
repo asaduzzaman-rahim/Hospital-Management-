@@ -26,7 +26,7 @@ const root = createBrowserRouter([
     {path:"signin", Component: SignIn},
     {path:"signup", Component: SignUp},
     {path:"PrivitePolice", Component: PrivitePolice},
-    {path:"Appointment", Component: AppointmentPage},
+    {path:"Appointment/:DoctorName", Component: AppointmentPage},
     {path: "*", Component: Error404}
   ]
 }
